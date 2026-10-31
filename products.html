@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products — Shirveda Dairy Catalogue</title>
+  <meta name="description"
+    content="Browse the planned packaged milk and dairy pouch catalogue for Shirveda in Ozar, Maharashtra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border-light);
+      background: var(--clean-white);
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: var(--transition);
+    }
+
+    .filter-btn.active,
+    .filter-btn:hover {
+      background-color: var(--primary-blue);
+      color: var(--clean-white);
+      border-color: var(--primary-blue);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-graphic">S</div>
+        <span class="logo-text">SHIRVEDA</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="quality.html" class="nav-link">Quality & Hygiene</a></li>
+          <li><a href="distribution.html" class="nav-link">Distribution</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <a href="distribution.html" class="btn btn-primary">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding bg-light-blue" style="padding: 3rem 0;">
+      <div class="container text-center">
+        <h1 class="section-title">Product Catalogue</h1>
+        <p class="section-subtitle">Explore our intended lineup of fresh milk pouch categories. Specifications will be
+          finalized prior to official launch.</p>
+
+        <!-- Interactive Category Filters -->
+        <div style="display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem;">
+          <button class="filter-btn active" data-filter="all">All Products</button>
+          <button class="filter-btn" data-filter="milk">Milk Pouches</button>
+          <button class="filter-btn" data-filter="value-added">Other Dairy (Planned)</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="card-grid">
+
+          <!-- Product Item 1
+          <div class="product-card product-item reveal" data-category="milk">
+            <div class="product-img-wrapper">
+              <span style="color: var(--primary-blue); font-weight: bold;">[ Full Cream Milk Image ]</span>
+            </div>
+            <span class="badge">Liquid Milk</span>
+            <h3>Full Cream Packaged Milk</h3>
+            <p style="color: var(--text-muted); margin: 0.75rem 0; flex-grow: 1;">Formulated for richness and traditional milk recipes. Packaged under sterile conditions.</p>
+            <p style="font-weight: 600; color: var(--deep-blue); font-size: 0.9rem;">Available Sizes: [500 ml / 1 L Placeholder]</p>
+            <button onclick="triggerWhatsAppEnquiry('Full Cream Packaged Milk')" class="btn btn-primary" style="margin-top: 1rem;">Enquire for Supply</button>
+          </div> -->
+
+          <!-- Product Item 2 -->
+          <div class="product-card product-item reveal" data-category="milk">
+            <div class="product-img-wrapper">
+              <img src="milk1.png" alt="Standardised Milk Pouch" class="product-img">
+            </div>
+            <span class="badge">Liquid Milk</span>
+            <h3>Standardised Milk Pouch</h3>
+            <p style="color: var(--text-muted); margin: 0.75rem 0; flex-grow: 1;">Ideal everyday household option
+              providing balanced taste and creaminess.</p>
+            <p style="font-weight: 600; color: var(--deep-blue); font-size: 0.9rem;">Available Sizes: [500 ml]</p>
+            <button onclick="triggerWhatsAppEnquiry('Standardised Milk Pouch')" class="btn btn-primary"
+              style="margin-top: 1rem;">Enquire for Supply</button>
+          </div>
+
+          <!-- Product Item 3
+          <div class="product-card product-item reveal" data-category="milk">
+            <div class="product-img-wrapper">
+              <span style="color: var(--primary-blue); font-weight: bold;">[ Toned Milk Image ]</span>
+            </div>
+            <span class="badge">Liquid Milk</span>
+            <h3>Toned Fresh Milk</h3>
+            <p style="color: var(--text-muted); margin: 0.75rem 0; flex-grow: 1;">A light, refreshing option ideal for daily nutrition and beverages.</p>
+            <p style="font-weight: 600; color: var(--deep-blue); font-size: 0.9rem;">Available Sizes: [500 ml Placeholder]</p>
+            <button onclick="triggerWhatsAppEnquiry('Toned Fresh Milk')" class="btn btn-primary" style="margin-top: 1rem;">Enquire for Supply</button>
+          </div> -->
+
+          <!-- Product Item 4 (Future Expansion Placeholder) -->
+          <div class="product-card product-item reveal" data-category="value-added">
+            <div class="product-img-wrapper">
+              <span style="color: var(--primary-blue); font-weight: bold;">DAHI</span>
+            </div>
+            <span class="badge">Future Expansion</span>
+            <h3>Fresh Dahi / Curd (Planned)</h3>
+            <p style="color: var(--text-muted); margin: 0.75rem 0; flex-grow: 1;">Concept stage for future production
+              line expansion based on market demand.</p>
+            <p style="font-weight: 600; color: var(--deep-blue); font-size: 0.9rem;">Available Sizes: [TBD]</p>
+            <button onclick="triggerWhatsAppEnquiry('Fresh Dahi Future Line')" class="btn btn-secondary"
+              style="margin-top: 1rem;">Register Future Interest</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>SHIRVEDA</h3>
+          <p>An upcoming milk production and packaging brand in Ozar, Maharashtra.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="quality.html">Quality & Hygiene</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Partnerships</h4>
+          <ul>
+            <li><a href="distribution.html">Distribution Enquiries</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Location & Contact</h4>
+          <p>Ozar, Maharashtra, India</p>
+           <p style="margin-top: 0.5rem;">Phone: 9021017719</p>
+          <p>Email: Kanhapathaksuk123@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shirveda Dairy Products. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

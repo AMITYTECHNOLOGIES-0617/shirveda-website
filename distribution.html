@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distribution & Dealer Enquiries — Shirveda Dairy</title>
+  <meta name="description" content="Enquire to become a retail partner, shop owner, or regional distributor for Shirveda packaged milk in Ozar, Maharashtra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link">
+        <div class="logo-graphic">S</div>
+        <span class="logo-text">SHIRVEDA</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="quality.html" class="nav-link">Quality & Hygiene</a></li>
+          <li><a href="distribution.html" class="nav-link active">Distribution</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+        <a href="distribution.html" class="btn btn-primary">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding bg-light-blue" style="padding: 3rem 0;">
+      <div class="container text-center">
+        <h1 class="section-title">Distributor & Retailer Enquiries</h1>
+        <p class="section-subtitle">We welcome conversations with local grocery shops, milk counters, and regional commercial distributors in Ozar and nearby territories.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem;">
+        
+        <!-- Enquiry Form -->
+        <div class="reveal">
+          <h2 style="margin-bottom: 1.5rem; font-size: 1.75rem;">Submit Partnership Enquiry</h2>
+          <form class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="distributorName" class="form-label">Full Name *</label>
+              <input type="text" id="distributorName" class="form-control" required placeholder="Your full name">
+              <span class="error-message">Please enter your name.</span>
+            </div>
+            
+            <div class="form-group">
+              <label for="businessName" class="form-label">Business / Shop Name *</label>
+              <input type="text" id businessName" class="form-control" required placeholder="e.g. Laxmi Retail Store">
+              <span class="error-message">Please enter your business name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number *</label>
+              <input type="tel" id="phone" class="form-control" required placeholder="10-digit mobile number">
+              <span class="error-message">Please enter a valid contact number.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="location" class="form-label">Location / Area in Ozar *</label>
+              <input type="text" id="location" class="form-control" required placeholder="e.g. Main Market, Ozar">
+              <span class="error-message">Please specify your business area.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="notes" class="form-label">Estimated Daily Quantity Needed (Litres)</label>
+              <textarea id="notes" class="form-control" rows="3" placeholder="e.g. 50 Litres daily expected"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Form Enquiry</button>
+            <div class="form-success-message" style="display: none; margin-top: 1rem; color: var(--success-green); font-weight: 600;">
+              ✓ Form validated successfully. (Connect backend service to send data).
+            </div>
+          </form>
+        </div>
+
+        <!-- WhatsApp Quick Connect Box -->
+        <div class="reveal" style="background-color: var(--soft-cream); padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); height: fit-content;">
+          <h3 style="margin-bottom: 1rem;">Direct WhatsApp Enquiry</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">For faster mobile response, click below to open a pre-filled WhatsApp enquiry message directly with our leadership team.</p>
+          <button onclick="triggerWhatsAppEnquiry('General Distributor & Retailer Opportunity')" class="btn btn-whatsapp" style="width: 100%; font-size: 1.05rem;">
+            <span>📱 Connect on WhatsApp</span>
+          </button>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1.5rem; line-height: 1.5;">* Terms, minimum order quantities, and delivery schedules will be formally confirmed by Shirveda management upon review.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>SHIRVEDA</h3>
+          <p>An upcoming milk production and packaging brand in Ozar, Maharashtra.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="quality.html">Quality & Hygiene</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Partnerships</h4>
+          <ul>
+            <li><a href="distribution.html">Distribution Enquiries</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Location & Contact</h4>
+          <p>Ozar, Maharashtra, India</p>
+           <p style="margin-top: 0.5rem;">Phone: 9021017719</p>
+          <p>Email: Kanhapathaksuk123@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shirveda Dairy Products. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
